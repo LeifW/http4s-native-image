@@ -17,19 +17,19 @@ object Dependencies {
 
 
   // Libraries
-  val catsEffect = Def.setting("org.typelevel" %% "cats-effect" % catsEffectVersion)
-  val catsCore   = Def.setting("org.typelevel" %% "cats-core"   % catsVersion)
+  val catsEffect = "org.typelevel" %% "cats-effect" % catsEffectVersion
+  val catsCore   = "org.typelevel" %% "cats-core"   % catsVersion
 
-  val miniTest     = Def.setting("io.monix" %% "minitest"      % miniTestVersion % "test")
-  val miniTestLaws = Def.setting("io.monix" %% "minitest-laws" % miniTestVersion % "test")
+  val miniTest     = "io.monix" %% "minitest"      % miniTestVersion % "test"
+  val miniTestLaws = "io.monix" %% "minitest-laws" % miniTestVersion % "test"
 
-  val http4sBlazeServer = Def.setting("org.http4s" %% "http4s-blaze-server" % http4sVersion)
-  val http4sBlazeClient = Def.setting("org.http4s" %% "http4s-blaze-client" % http4sVersion)
-  val http4sCirce       = Def.setting("org.http4s" %% "http4s-circe"        % http4sVersion)
-  val http4sDsl         = Def.setting("org.http4s" %% "http4s-dsl"          % http4sVersion)
+  val http4sBlazeServer = "org.http4s" %% "http4s-blaze-server" % http4sVersion
+  val http4sBlazeClient = "org.http4s" %% "http4s-blaze-client" % http4sVersion
+  val http4sCirce       = "org.http4s" %% "http4s-circe"        % http4sVersion
+  val http4sDsl         = "org.http4s" %% "http4s-dsl"          % http4sVersion
 
-  val logback = Def.setting("ch.qos.logback"      % "logback-classic" % logbackVersion)
-  val janino  = Def.setting("org.codehaus.janino" % "janino"          % janinoVersion)
+  val logback = "ch.qos.logback"      % "logback-classic" % logbackVersion
+  val janino  = "org.codehaus.janino" % "janino"          % janinoVersion
 
-  val circe = Def.setting("io.circe" %% "circe-generic" % circeVersion)
+  val circe = "io.circe" %% "circe-generic" % circeVersion
 }

@@ -16,23 +16,23 @@
 import sbt._
 import scala.sys.process._
 import java.io.File
+import Dependencies._
 
-ThisBuild / organization := "co.innerproduct"
-ThisBuild / name := "ping"
-ThisBuild / scalaVersion := "2.13.1"
-ThisBuild / useSuperShell := false
+organization := "co.innerproduct"
+name := "ping"
+scalaVersion := "2.13.2"
 
 libraryDependencies ++= Seq(
-  Dependencies.catsCore.value,
-  Dependencies.catsEffect.value,
-  Dependencies.miniTest.value,
-  Dependencies.miniTestLaws.value,
-  Dependencies.http4sBlazeServer.value,
-  Dependencies.http4sBlazeClient.value,
-  Dependencies.http4sCirce.value,
-  Dependencies.http4sDsl.value,
-  Dependencies.logback.value,
-  Dependencies.janino.value
+  catsCore,
+  catsEffect,
+  miniTest,
+  miniTestLaws,
+  http4sBlazeServer,
+  http4sBlazeClient,
+  http4sCirce,
+  http4sDsl,
+  logback,
+  janino
 )
 
 testFrameworks += new TestFramework("minitest.runner.Framework")
